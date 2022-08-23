@@ -3,3 +3,8 @@
     position: -webkit-sticky; /* Safari */
     top: 0;
 }
+
+#mainText {
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
