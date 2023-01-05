@@ -1,10 +1,27 @@
 #topDiv {
-    position: sticky;
-    position: -webkit-sticky; /* Safari */
-    top: 0;
+	position: sticky;
+	position: -webkit-sticky; /* Safari */
+	padding-top: 0px;
+	height: fit-content;
+	background-color: whitesmoke;
+	padding-bottom: 20px;
+	top: 0;
 }
 
-#mainText {
-    font-size: xx-large;
-    font-family: Arial, Helvetica, sans-serif;
+
+.topBarButton {
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	font-size: large;
+	font-weight: bold;
 }
+
+
+#homeButton {
+	font-size: xx-large;
+	transform: translate(0, 25%);
+	font-weight: normal;
+}
+
