@@ -2,12 +2,22 @@
 	position: sticky;
 	position: -webkit-sticky; /* Safari */
 	padding-top: 0px;
-	height: fit-content;
+	height: 60px;
 	background-color: whitesmoke;
-	padding-bottom: 20px;
 	top: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
 }
 
+#topDiv ul {
+	display: flex;
+	flex-direction: row;
+}
+#topDiv ul li {
+	display: flex;
+	flex-direction: row;
+}
 
 .topBarButton {
 	font-family: Arial, Helvetica, sans-serif;
@@ -16,12 +26,38 @@
 	border-color: transparent;
 	font-size: large;
 	font-weight: bold;
+	margin: 0;
+	height: fit-content;
 }
 
 
 #homeButton {
 	font-size: xx-large;
-	transform: translate(0, 25%);
 	font-weight: normal;
+	padding-right: 40px;
+	transform: translateY(-15%);
 }
 
+
+
+
+
+.gridHeader { grid-area: header; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.gridFooter { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'main right'
+    'footer footer';
+  background-color: #2196F3;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+}
